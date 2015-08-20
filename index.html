@@ -4,13 +4,21 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Mosaic shot by ExistMikan</title>
-  </head>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+  </head>
   <body>
 
+    <header>
+      Mosaic Shot
+    </header>
+    <video autoplay="true"></video>
+    <canvas id="shot_image" style="display:none;"></canvas>
+    <canvas id="shot_image2"></canvas>
 
-    HTML Page
-
+    <input id="strength" type="range" min="2" max="64" step="1" value="16"></input>
+    <button id="shot" type="button">Shot!</button>
 
   </body>
 </html>
